@@ -2,10 +2,10 @@
 //IWD2
 SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
 
-IW1000      IW1000   IW1000     0      152       200    -11     N             N             N        //++ Доки Таргоса // Targos Docks // Quais de Targos
-IW1100      IW1100   IW1100     0      93        168    -101    N             N             N        //++ Таргос - 10457 // Targos
-IW1200      IW1200   IW1200     0      128       57     -34   @iw1000       @iw1000       N        //++ Частокол // Targos
-IW2000      IW2000   IW2000     2      155       233    254    @iw2000       @iw2000       N        //++ Шенгарнский брод // Shaengarne Ford // Gue du Shaengarne
+IW1000      IW1000   IW1000     0      152       204   -280    N             N             N        //++ Доки Таргоса // Targos Docks // Quais de Targos
+IW1100      IW1100   IW1100     0       93       165   -371    N             N             N        //++ Таргос - 10457 // Targos
+IW1200      IW1200   IW1200     0      128       60     251    @iw1000       @iw1000       N        //++ Частокол // Targos
+IW2000      IW2000   IW2000     2      155       233   -249    @iw2000       @iw2000       N        //++ Шенгарнский брод // Shaengarne Ford // Gue du Shaengarne
 IW2001      IW2001   IW2001     0      134       233    254    N             N             N        //++
 IW2100      IW2100   IW2100     0      134       319    134    N             N             N        //++
 IW2101      IW2101   IW2101     0      134       319    134    N             N             N        //++
@@ -25,7 +25,7 @@ IW5102      IW5102   IW5102     4      164       815    440    @iw5005       @iw
 IW5200      IW5200   IW5200     0      165       810    354    @iw5200       @iw5200       N        //++ Монастырь Черного Ворона // Black Raven Monastery // Monastère du Corbeau Noir
 IW5203      IW5203   IW5203     0      185       905    360    @iw5200       @iw5200       N        //++ Монастырь Черного Ворона // Black Raven Monastery // Monastère du Corbeau Noir
 IW5300      IW5300   IW5300     0      166       1140   108    @iw5300       @iw5300       N        //++ Подземье // The Underdark // l’Ombre-Terre
-IW5303      IW5303   IW5303     0      186       1143  711    N             N             N        
+IW5303      IW5303   IW5303     0      186       1143   711    N             N             N        
 																		 		                    
 IW6000      IW6000   IW6000     0      172       1482   -189   @iw6000       @iw6000       N        //++ Кулдахарский Перевал // Kuldahar Pass // Le col de Kuldahar
 IW6001      IW6001   IW6001     0      137       1599   -245   @iw6001       @iw6001       N        //++ Кулдахар // Kuldahar
@@ -33,6 +33,6 @@ IW6050      IW6050   IW6050     0      187       500    5450   N             N  
 IW6100      IW6100   IW6100     0      140       1830   -189   @iw6100       @iw6100       N        //++ Глаз Дракона // Dragon's Eye // l’œil du Dragon
 IW6104      IW6104   IW6104     0      173       1854   -255   @iw6100       @iw6100       N        //++ Глаз Дракона // Dragon's Eye // l’œil du Dragon
 IW6200      IW6200   IW6200     0      188       2003   -276   @iw6200       @iw6200       N        //++ Поля Брани // Fields of Slaughter // Champs du Carnage
-IW6201      IW6201   IW6201     0      170       2079   -210    @iw6200       @iw6200       N        //++ Поля Брани // Fields of Slaughter // Champs du Carnage
+IW6201      IW6201   IW6201     0      170       2079   -210   @iw6200       @iw6200       N        //++ Поля Брани // Fields of Slaughter // Champs du Carnage
 IW6300      IW6300   IW6300     0      141       1955   -135   @iw6300       @iw6300       N        //++ Отрубленная Рука // Severed Hand // Main Tranchée
 
