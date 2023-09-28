@@ -1,0 +1,38 @@
+
+//IWD2
+SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
+
+IW1000      IW1000   IW1000     0      152       200    -11     N             N             N        //++ Доки Таргоса // Targos Docks // Quais de Targos
+IW1100      IW1100   IW1100     0      93        168    -101    N             N             N        //++ Таргос - 10457 // Targos
+IW1200      IW1200   IW1200     0      128       57     -34   @iw1000       @iw1000       N        //++ Частокол // Targos
+IW2000      IW2000   IW2000     2      155       233    254    @iw2000       @iw2000       N        //++ Шенгарнский брод // Shaengarne Ford // Gue du Shaengarne
+IW2001      IW2001   IW2001     0      134       233    254    N             N             N        //++
+IW2100      IW2100   IW2100     0      134       319    134    N             N             N        //++
+IW2101      IW2101   IW2101     0      134       319    134    N             N             N        //++
+IW2102      IW2102   IW2102     0      156       319    134    @iw2000       @iw2000       N        //++ Шенгарнский брод // Shaengarne Ford // Gué du Shaengarne
+IW3000      IW3000   IW3000     0      157       334    284    @iw3000       @iw3000       N        //++ Крепость Орды // Horde Fortress // Forteresse de la Horde
+IW3100      IW3100   IW3100     0      134       334    284    N             N             N        //++
+																		 		                    
+IW4000      IW4000   IW4000     0      158       364    446    @iw4000       @iw4000       N        //++ Западный Перевал // Western Pass // Passe Occidentale
+IW4001      IW4001   IW4001     0      134       364    446    N             N             N        //++
+IW4100      IW4100   IW4100     0      159       210    418    @iw4100       @iw4100       N        //++ Ледяной храм // Ice Temple // Temple de glace
+IW5000      IW5000   IW5000     0      160       355    535    @iw5000       @iw5000       N        //++ Блуждающая Деревня // Wandering Village // Village Itinérant
+IW5001      IW5001   IW5001     2      161       465    523    N             N             N        //++ Холодные Топи // Edge of the Fell Wood // Orée de la Forêt maudite
+IW5010      IW5010   IW5010     0      131       544    562    @iw5010       @iw5010       N        //++ The Fell Wood // La Foret Maudite
+IW5004      IW5004   IW5004     4      162       699    559    @iw5001       @iw5001       N        //++ Холодные Топи // Cold Marshes // Marais Froids
+IW5005      IW5005   IW5005     0      163       845    535    @iw5005       @iw5005       N        //++ Речные пещеры // River Caves // Cavernes de la rivière
+IW5102      IW5102   IW5102     4      164       815    440    @iw5005       @iw5005       N        //++ Речные пещеры // River Caves // Cavernes de la rivière
+IW5200      IW5200   IW5200     0      165       810    354    @iw5200       @iw5200       N        //++ Монастырь Черного Ворона // Black Raven Monastery // Monastère du Corbeau Noir
+IW5203      IW5203   IW5203     0      185       905    360    @iw5200       @iw5200       N        //++ Монастырь Черного Ворона // Black Raven Monastery // Monastère du Corbeau Noir
+IW5300      IW5300   IW5300     0      166       1140   108    @iw5300       @iw5300       N        //++ Подземье // The Underdark // l’Ombre-Terre
+IW5303      IW5303   IW5303     0      186       1143  711    N             N             N        
+																		 		                    
+IW6000      IW6000   IW6000     0      172       1482   -189   @iw6000       @iw6000       N        //++ Кулдахарский Перевал // Kuldahar Pass // Le col de Kuldahar
+IW6001      IW6001   IW6001     0      137       1599   -245   @iw6001       @iw6001       N        //++ Кулдахар // Kuldahar
+IW6050      IW6050   IW6050     0      187       500    5450   N             N             N        //++
+IW6100      IW6100   IW6100     0      140       1830   -189   @iw6100       @iw6100       N        //++ Глаз Дракона // Dragon's Eye // l’œil du Dragon
+IW6104      IW6104   IW6104     0      173       1854   -255   @iw6100       @iw6100       N        //++ Глаз Дракона // Dragon's Eye // l’œil du Dragon
+IW6200      IW6200   IW6200     0      188       2003   -276   @iw6200       @iw6200       N        //++ Поля Брани // Fields of Slaughter // Champs du Carnage
+IW6201      IW6201   IW6201     0      170       2079   -210    @iw6200       @iw6200       N        //++ Поля Брани // Fields of Slaughter // Champs du Carnage
+IW6300      IW6300   IW6300     0      141       1955   -135   @iw6300       @iw6300       N        //++ Отрубленная Рука // Severed Hand // Main Tranchée
+
