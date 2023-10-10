@@ -1,0 +1,89 @@
+<<<<<<<<.../wmp.l
+>>>>>>>>
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY wmptra BEGIN
+//  areaname => dialog.tra number
+//	iw1000 => ~@10457~ //Targos
+	iw1000 => ~@10456~  //Targos Dock
+	iw1100 => ~@10457~  //Targos Town
+	iw1200 => ~@10458~  //Targos Palisade
+    iw2000 => ~@10460~  // Shaengarne Ford
+    iw2102 => ~@41080~  // Shaengarne Bridge
+    iw3000 => ~@10459~
+    iw4000 => ~@32032~
+    iw4100 => ~@32033~
+    iw5000 => ~@32034~
+    iw5001 => ~@32038~
+    iw5004 => ~@32038~
+    iw5010 => ~@41389~
+    iw5005 => ~@32037~
+    iw5200 => ~@32113~
+    iw5300 => ~@32092~
+    iw6000 => ~@19731~
+    iw6001 => ~@3061~
+    iw6100 => ~@19730~
+    iw6200 => ~@32095~
+    iw6300 => ~@16234~
+END
+
+// creates the worlmap.tra file from the wmptra array
+COPY ~.../wmp.l~ ~%MOD_FOLDER%/lang/%LANGUAGE%/worldmap.tra~
+ACTION_PHP_EACH ~wmptra~ AS area => strref BEGIN
+	ACTION_BASH_FOR ~%MOD_FOLDER%/lang/%LANGUAGE%~ ~^.*\.tra$~ BEGIN
+		ACTION_IF FILE_CONTAINS_EVALUATED (~%MOD_FOLDER%/lang/%LANGUAGE%/%BASH_FOR_FILE%~ ~^%strref%~) BEGIN
+			COPY - ~%MOD_FOLDER%/lang/%LANGUAGE%/%BASH_FOR_FILE%~ ~%MOD_FOLDER%/lang/%LANGUAGE%~
+				REPLACE_EVALUATE CASE_INSENSITIVE ~~~~~^[ %TAB%]*%strref%[ %TAB%]*[=][ %TAB%]*[\~"]\(.*\)["\~]~~~~~ BEGIN
+					INNER_PATCH_SAVE string "%MATCH1%" BEGIN REPLACE_TEXTUALLY " " "###" END
+				END ~%MATCH0%~
+			APPEND_OUTER ~%MOD_FOLDER%/lang/%LANGUAGE%/worldmap.tra~ ~@%area% = "%string%"~
+		END
+	END
+END
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY mapicon BEGIN
+//  folder => bam_anim
+	AR5203 => ~XX1~
+    AR5303 => ~XX2~
+    AR6050 => ~XX4~
+    AR6200 => ~XX5~
+END
+
+INCLUDE ~%MOD_FOLDER%/worldmap/icon/add_map_icons_ee.tpa~
+ACTION_PHP_EACH ~mapicon~ AS folder => bam_anim BEGIN
+	LAF ADD_MAP_ICONS_EE
+	STR_VAR
+		path_to_icons = EVAL ~%MOD_FOLDER%/Worldmap/%folder%/icon.bam~
+		patch_to_pvrz = EVAL ~%MOD_FOLDER%/Worldmap/%folder%~
+	RET
+		new_icon_index
+	END
+	ACTION_DEFINE_ASSOCIATIVE_ARRAY remapped_icons BEGIN ~%bam_anim%~ => ~%new_icon_index%~ END
+END
+
+INCLUDE ~%MOD_FOLDER%/lib/add_worldmap_tbl.tpa~
+LAF ADD_WORLDMAP_TBL
+	INT_VAR
+    	inclSv = 0
+		patch_bp_files = 1
+	STR_VAR
+    	path_to_areas = EVAL ~%MOD_FOLDER%/Worldmap/areas.tbl~
+    	path_to_links = EVAL ~%MOD_FOLDER%/Worldmap/links.tbl~
+		path_to_areas_bp = EVAL ~%MOD_FOLDER%/Worldmap/areas-bp-bgt.tbl~
+		path_to_links_bp = EVAL ~%MOD_FOLDER%/Worldmap/links-bp-bgt.tbl~
+    	path_to_trans = EVAL ~%MOD_FOLDER%/lang/%LANGUAGE%/worldmap.tra~
+		icons_table = ~remapped_icons~
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
