@@ -3,17 +3,13 @@
 
 ACTION_DEFINE_ASSOCIATIVE_ARRAY wmptra BEGIN
 //  areaname => dialog.tra number
-//	iw1000 => ~@10457~ //Targos
-	iw1000 => ~@10456~  //Targos Dock
-	iw1100 => ~@10457~  //Targos Town
-	iw1200 => ~@10458~  //Targos Palisade
-    iw2000 => ~@10460~  // Shaengarne Ford
-    iw2102 => ~@41080~  // Shaengarne Bridge
+    iw1000 => ~@10457~	//Targos
+    iw2000 => ~@10460~	// Shaengarne Ford
+    iw2102 => ~@41080~	// Shaengarne Bridge
     iw3000 => ~@10459~
     iw4000 => ~@32032~
     iw4100 => ~@32033~
     iw5000 => ~@32034~
-    iw5001 => ~@32038~
     iw5004 => ~@32038~
     iw5010 => ~@41389~
     iw5005 => ~@32037~
@@ -24,6 +20,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY wmptra BEGIN
     iw6100 => ~@19730~
     iw6200 => ~@32095~
     iw6300 => ~@16234~
+// BP-BGT-Worldamp	
+    iw10000 => ~@2006000~	//Targos Dock
+    iw11000 => ~@2006001~	//Targos Town
+    iw12000 => ~@2006002~	//Targos Palisade
+    iw50010 => ~@2006003~	//Edge of the Fell Wood
 END
 
 // creates the worlmap.tra file from the wmptra array
