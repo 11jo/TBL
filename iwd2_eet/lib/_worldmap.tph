@@ -25,6 +25,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY wmptra BEGIN
     iw11000 => ~@2006001~	//Targos Town
     iw12000 => ~@2006002~	//Targos Palisade
     iw50010 => ~@2006003~	//Edge of the Fell Wood
+    iw61040 => ~@2006004~	//Dragon's Eye "Magma chamber"
 END
 
 // creates the worlmap.tra file from the wmptra array
