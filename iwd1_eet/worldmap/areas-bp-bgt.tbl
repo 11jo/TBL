@@ -3,7 +3,7 @@
 SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
                                                                
 ID1000      ID1000   ID1000     0      135       1147   -197   @id1000      @id1000      N        //++ Восточная Гавань // Easthaven // Havredest
-ID2000      ID2000   ID2000     0      136       1460   -200   @id2000      @id2000      N        //++ Кулдахарский перевал // Kuldahar Pass // Le col de Kuldahar
+ID2000      ID2000   ID2000     0      136       1460   -201   @id2000      @id2000      N        //++ Кулдахарский перевал // Kuldahar Pass // Le col de Kuldahar
 ID2100      ID2100   ID2100     2      137       1600   -245   @id2100      @id2100      N        //++ Кулдахар // Kuldahar
 ID3000      ID3000   ID3000     0      138       1680   -325   @id3000      @id3000      N        //++ Долина Теней // The Vale of Shadows // La Vallee des Ombres
 ID3600      ID3600   ID3600     0      139       1825   -310   @id3600      @id3600      N        //++ Храм Забытого Бога // Temple of the Forgotten God // Temple du dieu oublie
